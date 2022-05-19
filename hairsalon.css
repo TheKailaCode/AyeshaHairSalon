@@ -1,0 +1,1131 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#top {
+    background-image: url(queen.jpg);
+    background-repeat: no-repeat;
+    /*background-size:cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;*/
+    padding: 15px 30px;
+    border-bottom-right-radius: 35%;
+    border-bottom-left-radius: 35%;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    z-index: -999999;
+    background-size: 100% 100%;
+}
+
+.hidden.profile.picture {
+    display: none;
+}
+
+.hidden.ad {
+    display: none;
+}
+
+/*
+=====================================
+MORE RESPONSIVENESS BS BUT AAT 280PX
+=====================================
+*/
+/*@media screen and (max-width: 280px){
+    #topad {
+        padding-left: 0 !important;
+    }
+    .hidden.blackButton {
+        display: none;
+    }
+}*/
+.container {
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    margin: 0;
+    /*border: .3px solid black;*/
+    color: azure;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.hidden.hamburger {
+    display: none;
+}
+
+ul {
+    margin: 0 auto;
+}
+
+#corner {
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#book {
+    /* margin-left: 180px;*/
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#book:hover {
+    font-size: 35px;
+    color: orangered;
+}
+
+#topad {
+    padding-left: 120px;
+}
+
+section.icons section {
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5%;
+}
+
+/*#top {
+    margin-left: 100px;
+}*/
+.heading {
+    text-align: left;
+    width: 50%;
+    margin-top: 60px;
+}
+
+/*
+=========================================================
+RESPONSIVENESS 280 - 540
+=========================================================
+*/
+@media (min-width: 280px) and (max-width: 414px) {
+    #corner {
+        font-family: cursive;
+        font-size: 15px;
+        font-weight: 900;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 712px) {
+    #corner {
+        font-family: cursive;
+        font-size: 30px;
+        font-weight: 800;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 712px) {
+    nav li {
+        display: none;
+    }
+
+    .hidden.centerNav {
+        display: none;
+    }
+
+    section.hidden.hamburger {
+        display: inline-block;
+        padding: 1px 4px;
+        border: 1px solid white;
+        border-radius: 20%;
+        /*margin: 0 2px 0 45px;*/
+        background-color: black;
+    }
+
+    section.hidden.hamburger div {
+        width: 18px;
+        height: 2px;
+        background-color: white;
+        margin: 4px 0 4px 0;
+    }
+
+    /*#top {
+background-image: url(queen.jpg);
+background-color: rgba(239, 245, 244, 0.918);
+background-size: contain;
+/*background-color: /*rgba(255, 68, 0, 0.842)rgba(218, 165, 32, 0.952);*/
+    /*color: black;
+width: 100vw;
+border-radius: 0%;
+}*/
+    header div#top nav ul#nav a {
+        height: 100px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    section#hiddenHeader {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    section#hiddenHeader section+section {
+        padding-top: 35px;
+        display: none;
+    }
+
+    section#hiddenHeader section.heading {
+        /*padding-left: 10px;*/
+        padding-top: 40px;
+    }
+
+    section#hiddenHeader h1 {
+        display: none;
+        /* line-height: 90px;
+font-size: 85px;*/
+    }
+
+    div section#slogan {
+        padding-top: 10px;
+        padding-bottom: 70px;
+        font-size: 45px;
+        font-family: cursive;
+        text-align: center;
+        display: none;
+        justify-content: center;
+        color: black;
+        font-weight: 800;
+        line-height: 50px;
+    }
+
+    section.services {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.services>a.hidden.blackButton {
+        background-color:
+            /*rgba(218, 165, 32, 0.678)rgba(255, 68, 0, 0.712)*/
+            rgba(0, 0, 0, 0.924);
+        font-size: 25px;
+        margin: 50px 0;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    .hidden.profile.picture {
+        display: flex;
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+    }
+
+    nav.hidden.button.series li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-content: space-between;
+        color: aliceblue;
+        background-color: black;
+        margin-top: 10px;
+        padding: 8px 15px;
+        border-radius: 2px;
+        text-align: center;
+    }
+
+    nav li.mobil.button.mid {
+        border: 2px double aliceblue;
+        border-radius: 8px;
+    }
+
+    section#ourServices p {
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 20px;
+    }
+
+    section#ourServices h3 {
+        text-align: center;
+        font-size: 30px;
+        border-bottom: .5px solid gray;
+        margin: 20px 30px 12px 30px;
+    }
+
+    div.mobil.newPage {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.mobil.newPage>.hidden.blackButton.lookBook {
+        display: flex;
+        background-color: orangered;
+        font-size: 25px;
+        border-radius: 20px;
+        padding: 15px 40px;
+        margin-top: 30px;
+        margin-bottom: 65px;
+    }
+
+    section.hidden.ads {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        /*width: 100vw;*/
+        max-height: 100vh;
+        margin: 20px;
+    }
+
+    section.promo.hiddenads {
+        /*display: flex;*/
+        justify-content: space-around;
+        align-content: space-between;
+        width: 65vw;
+        padding: 30px 50px;
+        border: .5px dotted aliceblue;
+        background-color: black;
+        text-align: center;
+    }
+
+    .promo h6 {
+        font-size: 30px;
+    }
+
+    #ad2 h6 {
+        padding-bottom: 15px;
+
+    }
+
+    section.hidden.ads a {
+        background-color: rgba(255, 68, 0, 0.712);
+        border-radius: 20px;
+        padding: 10px 15px;
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .hidden.container {
+        display: none;
+    }
+
+    .hidden.container2.ad {
+        display: none;
+    }
+
+    section.headshots.stylists {
+        display: none;
+    }
+
+    #hairPart {
+        display: none;
+    }
+
+    section.gray {
+        display: none;
+    }
+
+    .pajamas.hidden.inspire {
+        display: none;
+    }
+
+    section#lookBook img {
+        display: none;
+    }
+
+    section.pajamas>section a {
+        background-color: black;
+    }
+
+    section#lookBook img {
+        display: none;
+    }
+
+    #styleMe {
+        display: none;
+    }
+
+    div.newPage {
+        display: none;
+        justify-content: center;
+    }
+
+    div.newPage>.hidden.blackButton.lookBook {
+        display: flex;
+        background-color: orangered;
+        font-size: 25px;
+        margin: 50px 0;
+        border-radius: 20px;
+        padding: 20px 40px;
+    }
+
+    section#lookBook {
+        display: none;
+        height: 0;
+    }
+}
+
+/*
+=========================================================
+END RESPONSIVENESS 280 - 540
+=========================================================
+*/
+
+/*
+=========================================================
+RESPONSIVENESS 712 - 1024
+-figure out header picture
+-figure out header nav/hamburger
+-fix borders on ads
+-fix paragraph under "make your own momentum"
+=========================================================
+*/
+
+@media (min-width: 712px) and (max-width: 1024px) {
+    nav li {
+        display: none;
+    }
+
+    .hidden.hamburger {
+        display: inline-block;
+        padding: 5px 8px;
+        border: 2px solid white
+            /*rgba(255, 68, 0, 0.712)*/
+        ;
+        border-radius: 20%;
+        margin: 20px 45px 0 45px;
+        background-color: black
+            /*rgba(240, 255, 255, 0.808)*/
+        ;
+    }
+
+    section.hidden.hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: white
+            /*rgba(255, 68, 0, 0.712)*/
+        ;
+        margin: 6px 0;
+    }
+
+    section#ourServices p {
+        display: none;
+    }
+
+    section#ourServices h3 {
+        display: none;
+    }
+
+    /*#top {
+background-image: url(queen.jpg);
+background-color: rgba(239, 245, 244, 0.918);
+background-size: contain;
+/*background-color: /*rgba(255, 68, 0, 0.842)rgba(218, 165, 32, 0.952);*/
+    /*color: black;
+width: 100vw;
+border-radius: 0%;
+}*/
+    div section#slogan {
+        margin: 50px 0;
+        padding-top: 150px;
+        padding-bottom: 70px;
+        font-size: 85px;
+        font-family: cursive;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        font-weight: 800;
+        line-height: 88px;
+    }
+
+    section#hiddenHeader {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #book {
+        display: none;
+    }
+
+    section#hiddenHeader section+section {
+        padding-top: 35px;
+        display: none;
+    }
+
+    section#hiddenHeader section.heading {
+        /*padding-left: 10px;*/
+        padding-top: 40px;
+    }
+
+    section#hiddenHeader h1 {
+        display: none;
+        /* line-height: 90px;
+    font-size: 85px;*/
+    }
+
+    section.services {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.services>a.hidden.blackButton {
+        background-color:
+            /*rgba(218, 165, 32, 0.678)rgba(255, 68, 0, 0.712)*/
+            black;
+        font-size: 25px;
+        margin: 10px 0 50px 0;
+        border-radius: 20px;
+        padding: 20px 40px;
+    }
+
+    .hidden.profile.picture {
+        display: flex;
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+    }
+
+    section.hidden.ads {
+        display: flex;
+        color: white;
+        align-items: center;
+        /*width: 100vw;*/
+        height: auto;
+        margin: 20px;
+    }
+
+    section.promo.hiddenads {
+        /*display: flex;*/
+        justify-content: space-around;
+        flex-direction: row;
+        width: 50vw;
+        padding: 30px 50px;
+        text-align: center;
+        background-color: black;
+        border: 1px dotted aliceblue;
+    }
+
+    .promo.hiddenads h6 {
+        font-size: 30px;
+    }
+
+    #ad2 h6 {
+        padding-bottom: 15px;
+
+    }
+
+    section.hidden.ads a {
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        padding: 10px 15px;
+    }
+
+    .hidden.container {
+        display: none;
+    }
+
+    .hidden.container2.ad {
+        display: none;
+    }
+
+    section.headshots.stylists {
+        display: none;
+    }
+
+    #hairPart {
+        display: none;
+    }
+
+    section.gray {
+        display: none;
+    }
+
+    .pajamas.hidden.inspire {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section.pajamas>section p {
+        text-align: center;
+    }
+
+    section#lookBook img {
+        display: none;
+    }
+
+    section.pajamas>section a {
+        background-color: black;
+    }
+
+    section#lookBook img {
+        display: none;
+    }
+
+    #styleMe {
+        display: none;
+    }
+
+    div.newPage {
+        display: none;
+        justify-content: center;
+    }
+
+    div.newPage.bottom {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.newPage>.hidden.blackButton.lookBook {
+        display: flex;
+        background-color: orangered;
+        font-size: 25px;
+        margin: 50px 0;
+        border-radius: 20px;
+        padding: 20px 40px;
+    }
+
+    section#lookBook {
+        display: none;
+        height: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hiddenDiv {
+        display: none;
+    }
+
+    section.hidden.ads {
+        display: none;
+        color: white;
+        align-items: center;
+        /*width: 100vw;*/
+        height: auto;
+        margin: 20px;
+    }
+
+    section#ourServices p {
+        display: none;
+    }
+
+    section#ourServices h3 {
+        display: none;
+    }
+}
+
+/*
+=========================================================
+END 712 - 1024
+=========================================================
+*/
+/* 
+============================
+unfinished/ old responsiveness
+============================
+*/
+/*@media screen and (max-width: 280px){
+    
+}
+@media (max-width:1357px){
+    section#lookBook img {
+       display: none;
+}
+    @media screen and (max-width: 280px){
+    .headshots {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: 200px;
+    }
+    section.headshots img {
+        height: 100px;
+        width: 280px;
+        border-top-left-radius: 0% !important;
+        border-top-right-radius: 0% !important;
+        position: relative;
+        padding-top: 80px;
+    }
+    div.names span {
+        background: black;
+        color: white;
+        padding: 7px 10px 7px 10px;
+        display: block;
+        text-align: center;
+        width: 280px;
+        text-transform: uppercase;
+        border-bottom-left-radius: 0% !important;
+        border-bottom-right-radius: 0% !important;
+    }
+    div.names {
+        width: 220px;
+    }
+}*/
+
+h1 {
+    font-size: 70px;
+    /*padding-top: 60px;*/
+    padding-bottom: 20px;
+    padding-right: 200px;
+}
+
+.blackButton {
+    background: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+section.heading p {
+    padding: 20px 0;
+}
+
+nav a {
+    color: white;
+}
+
+header div#top nav ul#nav li:hover {
+    font-size: 30px !important;
+    color: orangered !important;
+    font-weight: 700 !important;
+}
+
+.ad {
+    width: 240px;
+    height: 250px;
+    background: black;
+    color: white;
+    margin-top: 50px;
+    padding: 5px;
+    text-align: left;
+}
+
+/*.promo{
+    display: none;
+}
+/*section.ad a {
+    color: black;
+}*/
+section.ad span {
+    display: inline-block;
+    padding: 15px;
+}
+
+b {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.whiteButton {
+    background: white;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: black;
+    margin-left: 15px;
+}
+
+.icons {
+    height: 300px;
+    margin-top: 100px;
+}
+
+h5 {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+section.icons p {
+    font-size: 12px;
+    color: slategray;
+}
+
+.cleaner {
+    border-radius: 360px;
+    height: 100px;
+    width: 100px;
+}
+
+.chair {
+    border-radius: 360px;
+    height: 100px;
+    width: 100px;
+}
+
+.cream {
+    border-radius: 360px;
+    height: 100px;
+    width: 100px;
+}
+
+.pajamas {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 185px;
+    padding: 75px 0;
+}
+
+section.pajamas img {
+    width: 510px;
+    height: 330px;
+    padding-left: 30px;
+}
+
+section.pajamas h3 {
+    font-size: 55px;
+}
+
+section.pajamas p {
+    padding: 30px 35px 60px 0;
+    line-height: 25px;
+    color: slategray;
+    text-align: left;
+}
+
+section.pajamas>section {
+    padding-right: 15px;
+}
+
+.bigblack {
+    padding: 15px 30px;
+    font-size: 15px;
+}
+
+.gray {
+    background: rgb(241, 242, 244);
+    width: 100%;
+    height: 500px;
+    /*border-bottom-left-radius: 35%;
+    border-bottom-right-radius:35%;*/
+}
+
+.hidden.pajamas {
+    display: none;
+}
+
+.headshots {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 215px;
+    height: 500px;
+}
+
+section.headshots img {
+    height: 400px;
+    width: 280px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: relative;
+}
+
+div.names span {
+    background: black;
+    color: white;
+    padding: 7px 10px 7px 10px;
+    display: block;
+    text-align: center;
+    width: 280px;
+    text-transform: uppercase;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+}
+
+div.names {
+    width: 220px;
+}
+
+#colorDay {
+    width: 40%;
+    height: 280px;
+    margin-left: 80px;
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+section#colorDay h6 {
+    padding: 110px 0 30px 0;
+}
+
+section#colorDay h3 {
+    font-size: 35px;
+}
+
+section#colorDay h3+h3 {
+    padding: 30px 0;
+}
+
+.container {
+    height: 830px;
+    width: 100%;
+}
+
+/*===================FIGURE OUT WHY THE DEPRESSED LOOKING GIRL IS NOT SHOWING UP AT REG WIDTH=========*/
+.container2 {
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+    display: block;
+}
+
+.blondeBob {
+    background-image: url(burntorange.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.hidden.blackButton.lookBook {
+    display: none;
+    background-color: orangered;
+    font-size: 25px;
+}
+
+#lookBook {
+    height: 1000px;
+    margin: 20px 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.blackMagic {
+    height: 255px;
+    width: 280px;
+    margin-bottom: 100px;
+}
+
+.bigMagic {
+    height: 450px;
+    width: 280px;
+}
+
+.bigMagic {
+    margin-bottom: 100px;
+}
+
+section.upper img {
+    vertical-align: top;
+}
+
+.lower {
+    vertical-align: center;
+    position: relative;
+    margin-top: 255px;
+}
+
+#open {
+    padding-bottom: 0%;
+}
+
+.upper {
+    position: absolute;
+}
+
+#styleMe {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin: 0 500px;
+    margin-top: 100px;
+    border-bottom: 1.5px solid gray;
+}
+
+footer {
+    text-align: center;
+    /*position: fixed;*/
+    color: aliceblue;
+    line-height: 25px;
+    font-size: 20px;
+    padding: 30px 0;
+    height: 1200px;
+    background-image: url(black-haircare-products-and-tools.jpeg);
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    z-index: -999999;
+    background-size: 100% 100%;
+    /*background-color: rgb(241, 242, 244);*/
+    /*border-top-left-radius: 35%;
+    border-top-right-radius: 35%;*/
+}
